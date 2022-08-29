@@ -7,7 +7,7 @@ import java.util.List;
  * @author chenhouzhang
  * @date 2022/8/29 23:23
  */
-public class BaseList {
+public class BaseListUtils {
     /**
      * 对list进行分页返回数据
      *

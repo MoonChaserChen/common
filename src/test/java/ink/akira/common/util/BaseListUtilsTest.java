@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static ink.akira.common.util.BaseList.getByPage;
+import static ink.akira.common.util.BaseListUtils.getByPage;
 import static java.util.Arrays.*;
 import static java.util.Collections.*;
 import static org.junit.Assert.assertEquals;
@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  * @author chenhouzhang
  * @date 2022/8/29 23:25
  */
-public class BaseListTest {
+public class BaseListUtilsTest {
     @Test
     public void testGetByPage() {
         List<String> list = asList("a", "b", "c", "d", "e");
