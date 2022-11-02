@@ -11,7 +11,7 @@ public class BaseListUtils {
     /**
      * 对list进行分页返回数据
      *
-     * @param list
+     * @param list 原list
      * @param pageNo   页码
      * @param pageSize 页size
      * @param <T>      数据类型
