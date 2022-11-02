@@ -4,7 +4,7 @@ package ink.akira.common.enums;
  * 是/否
  *
  * @author chenhouzhang
- * @date 2022/8/30 00:13
+ * @since 2022/8/30 00:13
  */
 public enum WhetherEnum {
     YES((byte)1, "是"),
@@ -36,5 +36,35 @@ public enum WhetherEnum {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    /**
+     * 检查val是否为true
+     *
+     * @param val 待检测值
+     * @return val非0或非空为true，否则为false
+     */
+    public static boolean check(Byte val) {
+        return val != null && val != NO_VAL;
+    }
+
+    /**
+     * 检查val是否为true
+     *
+     * @param val 待检测值
+     * @return val非0或非空为true，否则为false
+     */
+    public static boolean check(Integer val) {
+        return val != null && val != NO_VAL;
+    }
+
+    /**
+     * 检查val是否为true
+     *
+     * @param val 待检测值
+     * @return val非0或非空为true，否则为false
+     */
+    public static boolean check(Long val) {
+        return val != null && val != NO_VAL;
     }
 }
