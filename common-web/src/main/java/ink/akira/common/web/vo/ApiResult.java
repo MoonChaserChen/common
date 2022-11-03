@@ -1,7 +1,7 @@
 package ink.akira.common.web.vo;
 
+import ink.akira.common.base.enums.CodeMsg;
 import ink.akira.common.base.enums.StatusCodeEnum;
-import ink.akira.common.base.exception.BizException;
 
 /**
  * API返回结构体
@@ -55,7 +55,7 @@ public class ApiResult<T> {
         return new ApiResult<>(StatusCodeEnum.OK.getCode(), StatusCodeEnum.OK.getMessage(), data);
     }
 
-    public static ApiResult fail(BizException ex) {
-        return new ApiResult<>(ex.getCode(), ex.getMessage());
+    public static ApiResult fail(CodeMsg codeMsg) {
+        return new ApiResult<>(codeMsg.getCode(), codeMsg.getMessage());
     }
 }

@@ -9,7 +9,7 @@ import ink.akira.common.base.enums.StatusCodeEnum;
  * @author chenhouzhang
  * @since 2022/11/3 09:59
  */
-public class BizException extends RuntimeException {
+public class BizException extends RuntimeException implements CodeMsg {
     private int code;
 
     public BizException(int code) {
