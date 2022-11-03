@@ -6,7 +6,7 @@ package ink.akira.common.base.exception;
  * @author chenhouzhang
  * @since 2022/11/3 09:59
  */
-public class BizException extends Exception {
+public class BizException extends RuntimeException {
     private int code;
 
     public BizException(int code) {

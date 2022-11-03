@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
  * @since 2022/11/3 09:59
  */
 @RestControllerAdvice
-public class BizExceptionHandler {
+public class BaseExceptionHandler {
 
     @ExceptionHandler(BizException.class)
     public ApiResult bizExceptionHandler(BizException e) {

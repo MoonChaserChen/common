@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ink.akira</groupId>
-    <artifactId>ink.akira.base.common</artifactId>
+    <artifactId>common</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
