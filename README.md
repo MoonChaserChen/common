@@ -3,3 +3,4 @@
 - 常量
 - 枚举
 - 基础工具类（命名Base开头，如BaseList、BaseString）
+- 异常
