@@ -1,5 +1,6 @@
 package ink.akira.common.web.vo;
 
+import ink.akira.common.base.enums.StatusCodeEnum;
 import ink.akira.common.base.exception.BizException;
 
 /**
@@ -9,9 +10,6 @@ import ink.akira.common.base.exception.BizException;
  * @since 2022/11/3 09:59
  */
 public class ApiResult<T> {
-    public static final int SUCCESS_CODE = 0;
-    public static final String SUCCESS_MSG = "OK";
-
     /**
      * 响应码
      */
@@ -54,7 +52,7 @@ public class ApiResult<T> {
     }
 
     public static <T> ApiResult ok(T data) {
-        return new ApiResult<>(SUCCESS_CODE, SUCCESS_MSG, data);
+        return new ApiResult<>(StatusCodeEnum.OK.getCode(), StatusCodeEnum.OK.getMessage(), data);
     }
 
     public static ApiResult fail(BizException ex) {
