@@ -25,9 +25,9 @@ public class BaseMD5 {
             throw new IllegalArgumentException("keyName can't be empty");
         }
         try {
-            String prestr = BaseMap.parse2orderedString(sArray);
-            prestr = prestr + "&" + keyName + "=" + secretKey;
-            return getMD5String(prestr);
+            String preStr = BaseMap.parse2orderedString(sArray);
+            preStr = preStr + "&" + keyName + "=" + secretKey;
+            return getMD5String(preStr);
         } catch (Exception e) {
             throw new RuntimeException("buildSign failed.", e);
         }
@@ -41,9 +41,9 @@ public class BaseMD5 {
      */
     public static String buildSign(Map<String, String> sArray, String secretKey) {
         try {
-            String prestr = BaseMap.parse2orderedString(sArray);
-            prestr = prestr + secretKey;
-            return getMD5String(prestr);
+            String preStr = BaseMap.parse2orderedString(sArray);
+            preStr = preStr + secretKey;
+            return getMD5String(preStr);
         } catch (Exception e) {
             throw new RuntimeException("buildSign failed.", e);
         }
